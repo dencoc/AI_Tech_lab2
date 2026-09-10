@@ -13,11 +13,16 @@
                 <td><p>Цена</p></td>
                 <td></td>
             </tr>
+
             {% for p in products %}
                 <tr>
                     <td><p>{{ p.name }}</p></td>
                     <td><p>{{ p.price }}</p></td>
-                    <td><p><a href="/buy/{{ p.id }}">Купить</a></p></td>
+                    <td>
+                        <p>
+                            <a href="{% url 'buy' p.id %}">Купить</a>
+                        </p>
+                    </td>
                 </tr>
             {% endfor %}
         </table>

@@ -1,15 +1,59 @@
 - model: shop.product
   pk: 1
   fields:
-    name: Стол
-    price: 2000
+    name: Чайник
+    price: 2500
+
 - model: shop.product
   pk: 2
   fields:
-    name: Стул
-    price: 1000
+    name: Сковорода
+    price: 1800
+
 - model: shop.product
   pk: 3
   fields:
-    name: Табурет
+    name: Кастрюля
+    price: 2200
+
+- model: shop.product
+  pk: 4
+  fields:
+    name: Утюг
+    price: 3500
+
+- model: shop.product
+  pk: 5
+  fields:
+    name: Гладильная доска
+    price: 3000
+
+- model: shop.product
+  pk: 6
+  fields:
+    name: Ведро
     price: 500
+
+- model: shop.product
+  pk: 7
+  fields:
+    name: Швабра
+    price: 900
+
+- model: shop.product
+  pk: 8
+  fields:
+    name: Сушилка для белья
+    price: 2000
+
+- model: shop.product
+  pk: 9
+  fields:
+    name: Пылесос
+    price: 8500
+
+- model: shop.product
+  pk: 10
+  fields:
+    name: Настольная лампа
+    price: 1800

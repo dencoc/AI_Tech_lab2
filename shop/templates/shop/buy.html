@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Покупка</title>
+</head>
+<body>
+    <div>
+        <h3>Покупка товара</h3>
+
+        <p>Товар: {{ product.name }}</p>
+        <p>Цена: {{ product.price }} руб.</p>
+
+        <form method="post">
+            {% csrf_token %}
+
+            <p>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="address">Адрес:</label>
+                <input type="text" id="address" name="address" required>
+            </p>
+
+            <button type="submit">Купить</button>
+        </form>
+    </div>
+</body>
+</html>
